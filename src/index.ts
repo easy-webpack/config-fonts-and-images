@@ -1,6 +1,6 @@
 import {WebpackConfig, get} from '@easy-webpack/core'
 
-export function fontsAndImages() {
+export = function fontsAndImages() {
   return function fontsAndImages(this: WebpackConfig): WebpackConfig {
     return {
       module: {
