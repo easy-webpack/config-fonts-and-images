@@ -1,7 +1,7 @@
-import {WebpackConfig, get} from '@easy-webpack/core'
+import {WebpackConfigWithMetadata, get} from '@easy-webpack/core'
 
 export = function fontsAndImages() {
-  return function fontsAndImages(this: WebpackConfig): WebpackConfig {
+  return function fontsAndImages(this: WebpackConfigWithMetadata): WebpackConfigWithMetadata {
     return {
       module: {
         loaders: get(this, 'module.loaders', []).concat([
