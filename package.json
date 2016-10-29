@@ -49,7 +49,7 @@
     "url-loader": "^0.5.7"
   },
   "peerDependencies": {
-    "@easy-webpack/core": "*"
+    "@easy-webpack/core": "1.4.3"
   },
   "ava": {
     "files": [
