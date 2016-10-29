@@ -4,7 +4,7 @@ export = function fontsAndImages() {
   return function fontsAndImages(this: WebpackConfigWithMetadata): WebpackConfigWithMetadata {
     return {
       module: {
-        loaders: get(this, 'module.loaders', []).concat([
+        rules: get(this, 'module.rules', []).concat([
           // embed small images and fonts as Data Urls and larger ones as files
           { test: /\.(png|gif|jpg)$/, loader: 'url', query: { limit: 8192 } },
           { test: /\.woff2(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'url', query: { limit: 10000, mimetype: 'application/font-woff2' } },
