@@ -1,4 +1,6 @@
 # @easy-webpack/config-fonts-and-images
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/easy-webpack/config-fonts-and-images.svg)](https://greenkeeper.io/)
 Load in fonts and images into webpack bundle using [file-loader] and [url-loader].
 
 Smaller files would be bundled as data URL while larger files will be emitted as a separate file.
